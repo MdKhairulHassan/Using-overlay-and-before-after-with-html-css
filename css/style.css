@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.banner{
+  background: url(../img/Natural-img.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.panel{
+  background: rgba(0, 0, 0, 0.6);
+  padding: 300px 0;
+  text-align: center;
+}
+.panel h1{
+  color: red;
+  display: inline-block;
+  position: relative;
+}
+.panel h1::after{
+  position: absolute;
+  height: 5px;
+  width: 267px;
+  background: aqua;
+  content: "";
+  top: 50%;
+  left: -280px;
+  transform: translateY(-50%);
+}
+.panel h1::before{
+  position: absolute;
+  height: 5px;
+  width: 267px;
+  background: aqua;
+  content: "";
+  top: 50%;
+  right: -280px;
+  transform: translateY(-50%);
+}
+
+/* span */
+
+.panel span::after{
+  position: absolute;
+  height: 267px;
+  width: 5px;
+  background: aqua;
+  content: "";
+  top: -270px;
+  left: 130px;
+}
+.panel span::before{
+  position: absolute;
+  height: 267px;
+  width: 5px;
+  background: aqua;
+  content: "";
+  top: 40px;
+  left: 130px;
+}
